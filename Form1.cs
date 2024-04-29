@@ -21,5 +21,17 @@ namespace 点菜管理系统
         {
             radioButton1.Checked = true;
         }
+
+        //登录按钮
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //注册按钮
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
