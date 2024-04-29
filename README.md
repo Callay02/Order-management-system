@@ -1,5 +1,6 @@
 # XML文件格式
 ## 管理员名单.xml
+```xml
 <Employee>
   <Employer>
     <EmployerName>宋江</EmployerName>
@@ -8,8 +9,9 @@
     <Date>2023-05-18 18:39:14</Date>
   </Employer>
 </Employee>
-
+```
 ## 服务员名单.xml
+```xml
 <Waiters>
   <Waiter enable="在职">
     <name>张青</name>
@@ -19,8 +21,9 @@
     <OnOff>是</OnOff>
   </Waiter>
 </Waiters>
-
+```
 ## 菜品-x类.xml
+```xml
 <Menu>
   <Dish>
     <Name>香菇青菜</Name>
@@ -28,8 +31,9 @@
     <OnOff>是</OnOff>
   </Dish>
 </Menu>
-
+```
 ## 账单.xml
+```xml
 <Bills>
   <Bill Time="2020-1-1" Waiter="张青">
     <Dish Price="12" Num="2">红烧肉</Dish>
@@ -37,3 +41,4 @@
     <Dish Price="18" Num="1">鱼头豆腐</Dish>
   </Bill>
 </Bills>
+```
