@@ -42,6 +42,7 @@ namespace 点菜管理系统
             this.listView1.Size = new System.Drawing.Size(319, 341);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -52,6 +53,7 @@ namespace 点菜管理系统
             this.button1.TabIndex = 1;
             this.button1.Text = "返回";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -62,6 +64,7 @@ namespace 点菜管理系统
             this.button2.TabIndex = 2;
             this.button2.Text = "结账";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form3
             // 
@@ -73,6 +76,8 @@ namespace 点菜管理系统
             this.Controls.Add(this.listView1);
             this.Name = "Form3";
             this.Text = "Form3";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form3_FormClosing);
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
 
         }
