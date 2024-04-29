@@ -50,7 +50,18 @@ namespace 点菜管理系统
                 return;
             }else if(result == 1)
             {
-                MessageBox.Show(name + "欢迎回来,上次的登录时间为" + lastDate);
+                if (userType == "服务员")
+                {
+                    MessageBox.Show(name + "欢迎回来,上次的登录时间为" + lastDate);
+                    this.Hide();
+                    Form2 f2 = new Form2(this, textBox1.Text);
+                    f2.Show();
+                }
+                else
+                {
+
+                }
+                
             }
         }
 

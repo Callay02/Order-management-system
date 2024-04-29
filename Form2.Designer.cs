@@ -49,9 +49,9 @@ namespace 点菜管理系统
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(73, 63);
+            this.label1.Location = new System.Drawing.Point(48, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 24);
+            this.label1.Size = new System.Drawing.Size(102, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "菜品类名";
             // 
@@ -59,9 +59,9 @@ namespace 点菜管理系统
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(339, 63);
+            this.label2.Location = new System.Drawing.Point(315, 63);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 24);
+            this.label2.Size = new System.Drawing.Size(56, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "菜名";
             // 
@@ -69,9 +69,9 @@ namespace 点菜管理系统
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(603, 63);
+            this.label3.Location = new System.Drawing.Point(594, 63);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 24);
+            this.label3.Size = new System.Drawing.Size(79, 23);
             this.label3.TabIndex = 2;
             this.label3.Text = "已点菜";
             // 
@@ -96,59 +96,66 @@ namespace 点菜管理系统
             this.toolStripLabel1.Name = "toolStripLabel1";
             this.toolStripLabel1.Size = new System.Drawing.Size(39, 22);
             this.toolStripLabel1.Text = "点菜";
+            this.toolStripLabel1.Click += new System.EventHandler(this.toolStripLabel1_Click);
             // 
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
             this.toolStripLabel2.Size = new System.Drawing.Size(69, 22);
             this.toolStripLabel2.Text = "全部删除";
+            this.toolStripLabel2.Click += new System.EventHandler(this.toolStripLabel2_Click);
             // 
             // toolStripLabel3
             // 
             this.toolStripLabel3.Name = "toolStripLabel3";
             this.toolStripLabel3.Size = new System.Drawing.Size(39, 22);
             this.toolStripLabel3.Text = "结账";
+            this.toolStripLabel3.Click += new System.EventHandler(this.toolStripLabel3_Click);
             // 
             // toolStripLabel4
             // 
             this.toolStripLabel4.Name = "toolStripLabel4";
             this.toolStripLabel4.Size = new System.Drawing.Size(69, 22);
             this.toolStripLabel4.Text = "删除一份";
+            this.toolStripLabel4.Click += new System.EventHandler(this.toolStripLabel4_Click);
             // 
             // toolStripLabel5
             // 
             this.toolStripLabel5.Name = "toolStripLabel5";
             this.toolStripLabel5.Size = new System.Drawing.Size(39, 22);
             this.toolStripLabel5.Text = "清空";
+            this.toolStripLabel5.Click += new System.EventHandler(this.toolStripLabel5_Click);
             // 
             // toolStripLabel6
             // 
             this.toolStripLabel6.Name = "toolStripLabel6";
             this.toolStripLabel6.Size = new System.Drawing.Size(39, 22);
             this.toolStripLabel6.Text = "退出";
+            this.toolStripLabel6.Click += new System.EventHandler(this.toolStripLabel6_Click);
             // 
             // treeView1
             // 
-            this.treeView1.Location = new System.Drawing.Point(35, 108);
+            this.treeView1.Location = new System.Drawing.Point(12, 108);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(186, 309);
+            this.treeView1.Size = new System.Drawing.Size(192, 309);
             this.treeView1.TabIndex = 4;
+            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(267, 108);
+            this.listView1.Location = new System.Drawing.Point(210, 108);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(213, 309);
+            this.listView1.Size = new System.Drawing.Size(268, 309);
             this.listView1.TabIndex = 5;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // listView2
             // 
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(528, 108);
+            this.listView2.Location = new System.Drawing.Point(484, 108);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(234, 309);
+            this.listView2.Size = new System.Drawing.Size(304, 309);
             this.listView2.TabIndex = 6;
             this.listView2.UseCompatibleStateImageBehavior = false;
             // 
@@ -156,7 +163,7 @@ namespace 点菜管理系统
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 424);
             this.Controls.Add(this.listView2);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.treeView1);
@@ -165,7 +172,8 @@ namespace 点菜管理系统
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "点菜";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
