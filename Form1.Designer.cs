@@ -110,7 +110,7 @@
             this.radioButton1.Size = new System.Drawing.Size(73, 19);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "点菜员";
+            this.radioButton1.Text = "服务员";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // button2
