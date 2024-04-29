@@ -16,5 +16,10 @@ namespace 点菜管理系统
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            radioButton1.Checked = true;
+        }
     }
 }
