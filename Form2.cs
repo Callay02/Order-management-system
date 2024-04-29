@@ -14,13 +14,13 @@ namespace 点菜管理系统
     public partial class Form2 : Form
     {
         Form1 f1;
-        string userName;
-        public Form2(Form1 f1, string userName)
+        string name;
+        public Form2(Form1 f1, string name)
         {
-            this.FormBorderStyle = FormBorderStyle.None;
+            this.ControlBox=false;
             InitializeComponent();
             this.f1 = f1;
-            this.userName = userName;
+            this.name = name;
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -180,7 +180,13 @@ namespace 点菜管理系统
 
         private void toolStripLabel3_Click(object sender, EventArgs e)
         {
-
+            if(listView2.Items.Count ==0) {
+                MessageBox.Show("请点菜");
+                return;
+            }
+            this.Hide();
+            Form3 f3 = new Form3(this,name,listView2);
+            f3.Show();
         }
     }
 }

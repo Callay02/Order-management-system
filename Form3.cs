@@ -7,17 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace 点菜管理系统
 {
     public partial class Form3 : Form
     {
         Form2 f2;
+        string name;
         ListView listview;
-        public Form3(Form2 f2, ListView listView)
+        string billsXmlPath = "账单.xml";
+        public Form3(Form2 f2,string name,ListView listView)
         {
             InitializeComponent();
+            this.ControlBox=false;
             this.f2 = f2;
+            this.name = name;
             this.listview = listView;
         }
 
@@ -45,12 +50,7 @@ namespace 点菜管理系统
             {
                 total += int.Parse(listView1.Items[i].SubItems[1].Text);
             }
-            listView1.Items.Add(" ");
-            listView1.Items.Add(" ");
-            listView1.Items.Add(" ");
-            ListViewItem item = new ListViewItem("总价格为");
-            item.SubItems.Add(total.ToString());
-            listView1.Items.Add(item);
+            label1.Text += total.ToString()+" 元";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -65,7 +65,47 @@ namespace 点菜管理系统
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if (addBill())
+            {
+                MessageBox.Show("结账成功");
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("结账失败");
+            }
+        }
 
+        //添加账单(结账)
+        private bool addBill()
+        {
+            try
+            {
+                XmlDocument xmlDoc = new XmlDocument();
+                xmlDoc.Load(billsXmlPath);
+                XmlNode root = xmlDoc.SelectSingleNode("Bills");
+
+                //创建Bill节点
+                XmlElement xe = xmlDoc.CreateElement("Bill");
+                xe.SetAttribute("Time", DateTime.Now.ToString("yyyy-MM-dd"));
+                xe.SetAttribute("Waiter", name);
+                //遍历listview添加Dish节点
+                for (int i = 0; i < listview.Items.Count; i++)
+                {
+                    XmlElement subXe = xmlDoc.CreateElement("Dish");
+                    subXe.InnerText = listview.Items[i].Text;
+                    subXe.SetAttribute("Price", listview.Items[i].SubItems[1].Text);
+                    subXe.SetAttribute("Num", listview.Items[i].SubItems[2].Text);
+                    xe.AppendChild(subXe);
+                }
+                root.AppendChild(xe);
+                xmlDoc.Save(billsXmlPath);
+                return true;
+            }
+            catch { 
+                return false;
+            }
+            
         }
     }
 }
