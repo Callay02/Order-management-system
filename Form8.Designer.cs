@@ -115,6 +115,7 @@ namespace 点菜管理系统
             this.Controls.Add(this.panel1);
             this.Name = "Form8";
             this.Text = "Form8";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form8_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

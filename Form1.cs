@@ -59,7 +59,10 @@ namespace 点菜管理系统
                 }
                 else
                 {
-
+                    MessageBox.Show(name + "欢迎回来");
+                    this.Hide();
+                    Form4 f4 = new Form4(this,name);
+                    f4.Show();
                 }
                 
             }
@@ -105,12 +108,14 @@ namespace 点菜管理系统
             {
                 XmlDocument xmlDoc = new XmlDocument();
                 xmlDoc.Load("管理员名单.xml");
-                XmlNodeList nodeList = xmlDoc.SelectNodes("//Employee");
+                XmlNodeList nodeList = xmlDoc.SelectNodes("//Employer");
+
                 foreach (XmlNode node in nodeList)
                 {
                     XmlElement xe = (XmlElement)node;
                     if (xe.ChildNodes[1].InnerText == userName && xe.ChildNodes[2].InnerText == password)
                     {
+                        
                         name = xe.ChildNodes[0].InnerText;
                         lastDate = xe.ChildNodes[3].InnerText;
                         xe.ChildNodes[3].InnerText = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
