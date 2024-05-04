@@ -64,6 +64,7 @@ namespace 点菜管理系统
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "汤类";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -74,8 +75,9 @@ namespace 点菜管理系统
             this.radioButton2.Size = new System.Drawing.Size(90, 24);
             this.radioButton2.TabIndex = 2;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "素菜类";
+            this.radioButton2.Text = "蔬菜类";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton1
             // 
@@ -88,6 +90,7 @@ namespace 点菜管理系统
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "荤菜类";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // comboBox1
             // 
@@ -123,6 +126,7 @@ namespace 点菜管理系统
             this.button1.TabIndex = 4;
             this.button1.Text = "查询";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 

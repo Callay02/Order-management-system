@@ -54,5 +54,11 @@ namespace 点菜管理系统
             Form7 f7 = new Form7();
             f7.Show();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            f1.Show();
+        }
     }
 }
