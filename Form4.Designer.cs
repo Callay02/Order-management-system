@@ -60,9 +60,9 @@ namespace 点菜管理系统
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(61, 154);
+            this.button1.Location = new System.Drawing.Point(49, 158);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 53);
+            this.button1.Size = new System.Drawing.Size(155, 53);
             this.button1.TabIndex = 2;
             this.button1.Text = "菜品管理";
             this.button1.UseVisualStyleBackColor = true;
@@ -71,7 +71,7 @@ namespace 点菜管理系统
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(261, 154);
+            this.button2.Location = new System.Drawing.Point(249, 158);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(155, 53);
             this.button2.TabIndex = 3;
@@ -82,9 +82,9 @@ namespace 点菜管理系统
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.Location = new System.Drawing.Point(61, 249);
+            this.button3.Location = new System.Drawing.Point(49, 253);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(139, 56);
+            this.button3.Size = new System.Drawing.Size(155, 56);
             this.button3.TabIndex = 4;
             this.button3.Text = "个人销售明细";
             this.button3.UseVisualStyleBackColor = true;
@@ -93,7 +93,7 @@ namespace 点菜管理系统
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.Location = new System.Drawing.Point(261, 249);
+            this.button4.Location = new System.Drawing.Point(249, 253);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(155, 56);
             this.button4.TabIndex = 5;
@@ -105,7 +105,7 @@ namespace 点菜管理系统
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 373);
+            this.ClientSize = new System.Drawing.Size(451, 373);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);

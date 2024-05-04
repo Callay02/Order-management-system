@@ -12,16 +12,13 @@ namespace 点菜管理系统
 {
     public partial class Form7 : Form
     {
-        Form4 f4;
-        public Form7(Form4 f4)
+        public Form7()
         {
             InitializeComponent();
-            this.f4 = f4;
         }
 
         private void Form7_FormClosing(object sender, FormClosingEventArgs e)
         {
-            f4.Show();
         }
     }
 }
