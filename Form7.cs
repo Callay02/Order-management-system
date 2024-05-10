@@ -76,7 +76,7 @@ namespace 点菜管理系统
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            ExcelDataOperation.ExportToExcel(dataGridView1, comboBox1.SelectedItem.ToString());
         }
     }
 }

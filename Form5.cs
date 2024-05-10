@@ -123,7 +123,7 @@ namespace 点菜管理系统
                 root.AppendChild(xe);
             }
             xmlDoc.Save(file);
-            MessageBox.Show("保持成功");
+            MessageBox.Show("保存成功");
         }
     }
 }
