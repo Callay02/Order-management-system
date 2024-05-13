@@ -29,21 +29,12 @@ namespace 点菜管理系统
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.jieZhang1 = new 点菜管理系统.JieZhang(this.components);
             this.SuspendLayout();
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(2, 3);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(338, 312);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -76,15 +67,24 @@ namespace 点菜管理系统
             this.label1.TabIndex = 3;
             this.label1.Text = "总价格为：";
             // 
+            // jieZhang1
+            // 
+            this.jieZhang1.HideSelection = false;
+            this.jieZhang1.Location = new System.Drawing.Point(7, 12);
+            this.jieZhang1.Name = "jieZhang1";
+            this.jieZhang1.Size = new System.Drawing.Size(324, 299);
+            this.jieZhang1.TabIndex = 4;
+            this.jieZhang1.UseCompatibleStateImageBehavior = false;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(343, 431);
+            this.Controls.Add(this.jieZhang1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.listView1);
             this.Name = "Form3";
             this.Text = "账单";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form3_FormClosing);
@@ -95,10 +95,9 @@ namespace 点菜管理系统
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
+        private JieZhang jieZhang1;
     }
 }

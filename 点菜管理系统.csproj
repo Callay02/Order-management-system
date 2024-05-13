@@ -116,6 +116,12 @@
     <Compile Include="Form8.Designer.cs">
       <DependentUpon>Form8.cs</DependentUpon>
     </Compile>
+    <Compile Include="JieZhang.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="JieZhang.Designer.cs">
+      <DependentUpon>JieZhang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>UserControl</SubType>
     </Compile>

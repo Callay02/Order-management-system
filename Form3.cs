@@ -33,24 +33,7 @@ namespace 点菜管理系统
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            listView1.Columns.Add("菜名", 140);
-            listView1.Columns.Add("价格", 100);
-            listView1.View = View.Details;
-
-            for (int i = 0; i < listview.Items.Count; i++)
-            {
-                listView1.Items.Add(listview.Items[i].Text);
-                int count = int.Parse(listview.Items[i].SubItems[1].Text);
-                int price = int.Parse(listview.Items[i].SubItems[2].Text);
-                listView1.Items[i].SubItems.Add((count * price).ToString());
-            }
-            //计算总价
-            int total = 0;
-            for (int i = 0; i < listView1.Items.Count; i++)
-            {
-                total += int.Parse(listView1.Items[i].SubItems[1].Text);
-            }
-            label1.Text += total.ToString()+" 元";
+            jieZhang1.init(listview);
         }
 
         private void button1_Click(object sender, EventArgs e)
