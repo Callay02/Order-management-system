@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.caiPinGuanLi1 = new 点菜管理系统.CaiPinGuanLi(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.caiPinGuanLi1)).BeginInit();
             this.SuspendLayout();
             // 
             // treeView1
@@ -53,31 +54,29 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridView1
+            // caiPinGuanLi1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(205, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(506, 375);
-            this.dataGridView1.TabIndex = 3;
-            this.dataGridView1.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dataGridView1_EditingControlShowing);
-            this.dataGridView1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dataGridView1_KeyPress);
+            this.caiPinGuanLi1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.caiPinGuanLi1.Location = new System.Drawing.Point(205, 12);
+            this.caiPinGuanLi1.Name = "caiPinGuanLi1";
+            this.caiPinGuanLi1.RowHeadersWidth = 51;
+            this.caiPinGuanLi1.RowTemplate.Height = 27;
+            this.caiPinGuanLi1.Size = new System.Drawing.Size(515, 375);
+            this.caiPinGuanLi1.TabIndex = 3;
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(723, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.caiPinGuanLi1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.treeView1);
             this.Name = "Form5";
             this.Text = "菜品管理";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form5_FormClosing);
             this.Load += new System.EventHandler(this.Form5_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.caiPinGuanLi1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -86,6 +85,6 @@
 
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private CaiPinGuanLi caiPinGuanLi1;
     }
 }
