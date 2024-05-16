@@ -115,6 +115,7 @@ namespace 点菜管理系统
             this.yeWuTongJi1.RowTemplate.Height = 37;
             this.yeWuTongJi1.Size = new System.Drawing.Size(1125, 600);
             this.yeWuTongJi1.TabIndex = 5;
+            this.yeWuTongJi1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.yeWuTongJi1_CellContentClick);
             // 
             // Form8
             // 

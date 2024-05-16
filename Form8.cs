@@ -59,5 +59,10 @@ namespace 点菜管理系统
                 yeWuTongJi1.show2(name1, name2, dateTimePicker1.Value, dateTimePicker2.Value);
             }
         }
+
+        private void yeWuTongJi1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
