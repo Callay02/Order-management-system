@@ -38,9 +38,7 @@ namespace 点菜管理系统
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.genRenXiaoShouMingXi1 = new 点菜管理系统.GenRenXiaoShouMingXi(this.components);
             this.genRenXiaoShouMingXi2 = new 点菜管理系统.GenRenXiaoShouMingXi(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.genRenXiaoShouMingXi1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.genRenXiaoShouMingXi2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,17 +113,6 @@ namespace 点菜管理系统
             this.button2.Text = "导出";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // genRenXiaoShouMingXi1
-            // 
-            this.genRenXiaoShouMingXi1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.genRenXiaoShouMingXi1.Location = new System.Drawing.Point(100, 100);
-            this.genRenXiaoShouMingXi1.Name = "genRenXiaoShouMingXi1";
-            this.genRenXiaoShouMingXi1.RowHeadersWidth = 51;
-            this.genRenXiaoShouMingXi1.RowTemplate.Height = 27;
-            this.genRenXiaoShouMingXi1.Size = new System.Drawing.Size(691, 352);
-            this.genRenXiaoShouMingXi1.TabIndex = 10;
-            // 
             // genRenXiaoShouMingXi2
             // 
             this.genRenXiaoShouMingXi2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -152,7 +139,6 @@ namespace 点菜管理系统
             this.Name = "Form7";
             this.Size = new System.Drawing.Size(750, 450);
             this.Load += new System.EventHandler(this.Form7_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.genRenXiaoShouMingXi1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.genRenXiaoShouMingXi2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -169,7 +155,6 @@ namespace 点菜管理系统
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private GenRenXiaoShouMingXi genRenXiaoShouMingXi1;
         private GenRenXiaoShouMingXi genRenXiaoShouMingXi2;
     }
 }
