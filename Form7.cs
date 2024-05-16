@@ -12,7 +12,7 @@ using System.Xml;
 
 namespace 点菜管理系统
 {
-    public partial class Form7 : Form
+    public partial class Form7 : UserControl
     {
         public Form7()
         {

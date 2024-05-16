@@ -47,16 +47,16 @@ namespace 点菜管理系统
             this.panel1.Controls.Add(this.radioButton3);
             this.panel1.Controls.Add(this.radioButton2);
             this.panel1.Controls.Add(this.radioButton1);
-            this.panel1.Location = new System.Drawing.Point(82, 31);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(279, 43);
+            this.panel1.Size = new System.Drawing.Size(252, 30);
             this.panel1.TabIndex = 0;
             // 
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(201, 4);
+            this.radioButton3.Location = new System.Drawing.Point(178, 4);
             this.radioButton3.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(70, 24);
@@ -69,7 +69,7 @@ namespace 点菜管理系统
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(102, 4);
+            this.radioButton2.Location = new System.Drawing.Point(90, 4);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(90, 24);
@@ -95,34 +95,34 @@ namespace 点菜管理系统
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(82, 81);
+            this.comboBox1.Location = new System.Drawing.Point(0, 40);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(278, 28);
+            this.comboBox1.Size = new System.Drawing.Size(252, 28);
             this.comboBox1.TabIndex = 1;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(411, 28);
+            this.dateTimePicker1.Location = new System.Drawing.Point(260, 0);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(249, 30);
+            this.dateTimePicker1.Size = new System.Drawing.Size(199, 30);
             this.dateTimePicker1.TabIndex = 2;
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(411, 81);
+            this.dateTimePicker2.Location = new System.Drawing.Point(260, 38);
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(249, 30);
+            this.dateTimePicker2.Size = new System.Drawing.Size(199, 30);
             this.dateTimePicker2.TabIndex = 3;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(719, 44);
+            this.button1.Location = new System.Drawing.Point(467, 14);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 55);
+            this.button1.Size = new System.Drawing.Size(78, 43);
             this.button1.TabIndex = 4;
             this.button1.Text = "查询";
             this.button1.UseVisualStyleBackColor = true;
@@ -131,18 +131,17 @@ namespace 点菜管理系统
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(59, 152);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 75);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(860, 398);
+            this.dataGridView1.Size = new System.Drawing.Size(545, 375);
             this.dataGridView1.TabIndex = 5;
             // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 600);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker2);
@@ -150,11 +149,9 @@ namespace 点菜管理系统
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form6";
-            this.Text = "菜品销售细明";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form6_FormClosing);
+            this.Size = new System.Drawing.Size(547, 450);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

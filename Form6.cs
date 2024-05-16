@@ -11,7 +11,7 @@ using System.Xml;
 
 namespace 点菜管理系统
 {
-    public partial class Form6 : Form
+    public partial class Form6 : UserControl
     {
         public Form6()
         {

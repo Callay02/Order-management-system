@@ -24,18 +24,27 @@ namespace 点菜管理系统
         private void Form4_Load(object sender, EventArgs e)
         {
             label1.Text = name+"欢迎您！";
+            f5 = new Form5();
+            f6 = new Form6();
+            f7 = new Form7();
+            f8 = new Form8();
+
         }
 
+        UserControl f5;
+        UserControl f6 ;
+        UserControl f7 ;
+        UserControl f8 ;
         private void button1_Click(object sender, EventArgs e)
         {
-            Form5 f5 = new Form5();
-            f5.Show();
+            panel1.Controls.Clear();
+            panel1.Controls.Add(f5);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form8 f8 = new Form8();
-            f8.Show();
+            panel1.Controls.Clear();
+            panel1.Controls.Add(f8);
         }
 
         private void Form4_FormClosing(object sender, FormClosingEventArgs e)
@@ -45,14 +54,14 @@ namespace 点菜管理系统
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form6 f6 = new Form6();
-            f6.Show();
+            panel1.Controls.Clear();
+            panel1.Controls.Add(f6);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form7 f7 = new Form7();
-            f7.Show();
+            panel1.Controls.Clear();
+            panel1.Controls.Add(f7);
         }
 
         private void label2_Click(object sender, EventArgs e)

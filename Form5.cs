@@ -12,7 +12,7 @@ using System.Xml;
 
 namespace 点菜管理系统
 {
-    public partial class Form5 : Form
+    public partial class Form5 : UserControl
     {
         public Form5()
         {
@@ -55,7 +55,14 @@ namespace 点菜管理系统
 
         private void button1_Click(object sender, EventArgs e)
         {
-            caiPinGuanLi1.save();
+            try
+            {
+                caiPinGuanLi1.save();
+            }
+            catch (Exception ex)
+            {
+            }
+            
         }
     }
 }

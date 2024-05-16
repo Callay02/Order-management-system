@@ -46,7 +46,7 @@ namespace 点菜管理系统
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(64, 29);
+            this.label1.Location = new System.Drawing.Point(59, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 24);
             this.label1.TabIndex = 0;
@@ -56,7 +56,7 @@ namespace 点菜管理系统
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(209, 29);
+            this.label2.Location = new System.Drawing.Point(204, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 24);
             this.label2.TabIndex = 1;
@@ -66,7 +66,7 @@ namespace 点菜管理系统
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(387, 29);
+            this.label3.Location = new System.Drawing.Point(382, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 24);
             this.label3.TabIndex = 2;
@@ -74,7 +74,7 @@ namespace 点菜管理系统
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(182, 65);
+            this.dateTimePicker1.Location = new System.Drawing.Point(177, 36);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(159, 25);
             this.dateTimePicker1.TabIndex = 3;
@@ -82,21 +82,21 @@ namespace 点菜管理系统
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(42, 65);
+            this.comboBox1.Location = new System.Drawing.Point(38, 36);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 23);
             this.comboBox1.TabIndex = 4;
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(361, 65);
+            this.dateTimePicker2.Location = new System.Drawing.Point(356, 36);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(159, 25);
             this.dateTimePicker2.TabIndex = 5;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(561, 62);
+            this.button1.Location = new System.Drawing.Point(556, 33);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 28);
             this.button1.TabIndex = 6;
@@ -104,9 +104,19 @@ namespace 点菜管理系统
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(42, 125);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 27;
+            this.dataGridView1.Size = new System.Drawing.Size(687, 395);
+            this.dataGridView1.TabIndex = 8;
+            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(654, 62);
+            this.button2.Location = new System.Drawing.Point(649, 33);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 28);
             this.button2.TabIndex = 9;
@@ -129,7 +139,6 @@ namespace 点菜管理系统
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(776, 554);
-            this.Controls.Add(this.genRenXiaoShouMingXi1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker2);
@@ -139,8 +148,7 @@ namespace 点菜管理系统
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form7";
-            this.Text = "个人销售细明";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form7_FormClosing);
+            this.Size = new System.Drawing.Size(750, 450);
             this.Load += new System.EventHandler(this.Form7_Load);
             ((System.ComponentModel.ISupportInitialize)(this.genRenXiaoShouMingXi1)).EndInit();
             this.ResumeLayout(false);

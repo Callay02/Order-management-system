@@ -37,18 +37,18 @@
             // 
             // treeView1
             // 
-            this.treeView1.Location = new System.Drawing.Point(4, 12);
+            this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(195, 434);
+            this.treeView1.Size = new System.Drawing.Size(176, 447);
             this.treeView1.TabIndex = 0;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(622, 393);
+            this.button1.Location = new System.Drawing.Point(658, 393);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 45);
+            this.button1.Size = new System.Drawing.Size(89, 54);
             this.button1.TabIndex = 2;
             this.button1.Text = "保存";
             this.button1.UseVisualStyleBackColor = true;
@@ -57,24 +57,22 @@
             // caiPinGuanLi1
             // 
             this.caiPinGuanLi1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.caiPinGuanLi1.Location = new System.Drawing.Point(205, 12);
+            this.caiPinGuanLi1.Location = new System.Drawing.Point(182, 0);
             this.caiPinGuanLi1.Name = "caiPinGuanLi1";
             this.caiPinGuanLi1.RowHeadersWidth = 51;
             this.caiPinGuanLi1.RowTemplate.Height = 27;
-            this.caiPinGuanLi1.Size = new System.Drawing.Size(515, 375);
+            this.caiPinGuanLi1.Size = new System.Drawing.Size(568, 387);
             this.caiPinGuanLi1.TabIndex = 3;
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(723, 450);
             this.Controls.Add(this.caiPinGuanLi1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.treeView1);
             this.Name = "Form5";
-            this.Text = "菜品管理";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form5_FormClosing);
+            this.Size = new System.Drawing.Size(750, 450);
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.caiPinGuanLi1)).EndInit();
             this.ResumeLayout(false);

@@ -13,7 +13,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace 点菜管理系统
 {
-    public partial class Form8 : Form
+    public partial class Form8 : UserControl
     {
         public Form8()
         {
