@@ -122,6 +122,12 @@
     <Compile Include="Form8.Designer.cs">
       <DependentUpon>Form8.cs</DependentUpon>
     </Compile>
+    <Compile Include="GenRenXiaoShouMingXi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GenRenXiaoShouMingXi.Designer.cs">
+      <DependentUpon>GenRenXiaoShouMingXi.cs</DependentUpon>
+    </Compile>
     <Compile Include="JieZhang.cs">
       <SubType>Component</SubType>
     </Compile>

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Xml;
 
 namespace 点菜管理系统
@@ -38,45 +39,15 @@ namespace 点菜管理系统
 
         private void button1_Click(object sender, EventArgs e)
         {
-            XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load("账单.XML");
-            XmlNodeList nodeList = xmlDoc.SelectNodes("//Bill");
-            DataTable table1 = new DataTable();
-            table1.Columns.Add("菜名");
-            table1.Columns.Add("单价");
-            table1.Columns.Add("份数");
-            table1.Columns.Add("点菜员");
-            table1.Columns.Add("消费时间");
-            foreach (XmlNode xn in nodeList)
-            {
-                string data = xn.Attributes[0].Value;
-                string user = xn.Attributes[1].Value;
-                XmlElement xe = (XmlElement)xn;
-                for (int i = 0; i < xe.ChildNodes.Count; i++)
-                {
-                    if (Convert.ToDateTime(data).Date < dateTimePicker1.Value.Date || Convert.ToDateTime(data).Date > dateTimePicker2.Value.Date)
-                    {
-                        continue;
-                    }
-                    if (comboBox1.SelectedItem.ToString() != "所有点菜员" && comboBox1.SelectedItem.ToString() != user)
-                    {
-                        continue;
-                    }
-                    DataRow dr = table1.NewRow();
-                    dr["菜名"] = xe.ChildNodes[i].InnerText;
-                    dr["份数"] = xe.ChildNodes[i].Attributes[1].Value.ToString();
-                    dr["单价"] = xe.ChildNodes[i].Attributes[0].Value.ToString();
-                    dr["消费时间"] = data.ToString();
-                    dr["点菜员"] = user.ToString();
-                    table1.Rows.Add(dr);
-                }
-            }
-            dataGridView1.DataSource = table1;
+            DateTime dTP1 = dateTimePicker1.Value.Date;
+            DateTime dTP2 = dateTimePicker2.Value.Date;
+            string cbB = comboBox1.SelectedItem.ToString();
+            genRenXiaoShouMingXi1.search("账单.xml", dTP1, dTP2, cbB);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ExcelDataOperation.ExportToExcel(dataGridView1, comboBox1.SelectedItem.ToString());
+            ExcelDataOperation.ExportToExcel(genRenXiaoShouMingXi1, comboBox1.SelectedItem.ToString());
         }
     }
 }
