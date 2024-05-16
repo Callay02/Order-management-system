@@ -42,7 +42,7 @@ namespace 点菜管理系统
             DateTime dTP1 = dateTimePicker1.Value.Date;
             DateTime dTP2 = dateTimePicker2.Value.Date;
             string cbB = comboBox1.SelectedItem.ToString();
-            genRenXiaoShouMingXi1.search("账单.xml", dTP1, dTP2, cbB);
+            genRenXiaoShouMingXi2.search("账单.xml", dTP1, dTP2, cbB);
         }
 
         private void button2_Click(object sender, EventArgs e)
