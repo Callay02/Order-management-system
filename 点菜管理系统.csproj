@@ -142,6 +142,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="YeWuTongJi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="YeWuTongJi.Designer.cs" />
     <EmbeddedResource Include="CaiPinGuanLi.resx">
       <DependentUpon>CaiPinGuanLi.cs</DependentUpon>
     </EmbeddedResource>
