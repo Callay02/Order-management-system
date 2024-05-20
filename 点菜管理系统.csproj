@@ -128,11 +128,23 @@
     <Compile Include="GenRenXiaoShouMingXi.Designer.cs">
       <DependentUpon>GenRenXiaoShouMingXi.cs</DependentUpon>
     </Compile>
+    <Compile Include="GeRenXinXiGuanLi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeRenXinXiGuanLi.Designer.cs">
+      <DependentUpon>GeRenXinXiGuanLi.cs</DependentUpon>
+    </Compile>
     <Compile Include="JieZhang.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="JieZhang.Designer.cs">
       <DependentUpon>JieZhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JiHuo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JiHuo.Designer.cs">
+      <DependentUpon>JiHuo.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>UserControl</SubType>
@@ -172,6 +184,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form8.resx">
       <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeRenXinXiGuanLi.resx">
+      <DependentUpon>GeRenXinXiGuanLi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JiHuo.resx">
+      <DependentUpon>JiHuo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.login1 = new 点菜管理系统.Login();
             this.SuspendLayout();
             // 
@@ -36,27 +37,40 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(144, 35);
+            this.label3.Location = new System.Drawing.Point(108, 28);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 20);
+            this.label3.Size = new System.Drawing.Size(39, 16);
             this.label3.TabIndex = 7;
             this.label3.Text = "欢迎";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(185, 276);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "点击激活";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // login1
             // 
-            this.login1.Location = new System.Drawing.Point(62, 100);
+            this.login1.Location = new System.Drawing.Point(32, 69);
+            this.login1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.login1.Name = "login1";
-            this.login1.Size = new System.Drawing.Size(219, 206);
+            this.login1.Size = new System.Drawing.Size(185, 169);
             this.login1.TabIndex = 8;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(351, 376);
+            this.ClientSize = new System.Drawing.Size(263, 301);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.login1);
             this.Controls.Add(this.label3);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "登录";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -68,6 +82,7 @@
         #endregion
         private System.Windows.Forms.Label label3;
         private Login login1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

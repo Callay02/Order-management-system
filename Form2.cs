@@ -15,16 +15,20 @@ namespace 点菜管理系统
     {
         Form1 f1;
         string name;
-        public Form2(Form1 f1, string name)
+        string userName;
+        public Form2(Form1 f1, string name,string userName)
         {
             this.ControlBox=false;
             InitializeComponent();
             this.f1 = f1;
             this.name = name;
+            this.userName = userName;
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            toolStripStatusLabel1.Text =name+"欢迎您！";
+            toolStripStatusLabel3.Text = "当前系统时间：" + DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
             treeView1.Nodes.Add("0", "菜名");
             treeView1.Nodes["0"].Nodes.Add("0-0", "蔬菜类");
             treeView1.Nodes["0"].Nodes.Add("0-1", "荤菜类");
@@ -187,6 +191,17 @@ namespace 点菜管理系统
             this.Hide();
             Form3 f3 = new Form3(this,name,listView2);
             f3.Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            toolStripStatusLabel3.Text = "当前系统时间：" + DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
+        }
+
+        private void toolStripLabel7_Click(object sender, EventArgs e)
+        {
+            GeRenXinXiGuanLi g = new GeRenXinXiGuanLi("服务员",userName);
+            g.Show();
         }
     }
 }

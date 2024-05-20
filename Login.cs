@@ -27,9 +27,25 @@ namespace 点菜管理系统
         string path2;
         public void show(Form f,string path1,string path2)
         {
+            this.panel1.Enabled=true;
+            this.textBox1.Enabled = true;
+            this.textBox2.Enabled = true;
+            this.button1.Enabled = true;
+            this.button2.Enabled = true;
+            this.checkBox1.Enabled = true;
             this.f=f;
             this.path1=path1;
             this.path2=path2;
+        }
+
+        public void disable()
+        {
+            this.textBox1.Enabled=false;
+            this.textBox2.Enabled=false;
+            this.panel1.Enabled = false;
+            this.button1.Enabled = false;
+            this.button2.Enabled = false;
+            this.checkBox1.Enabled=false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -47,7 +63,7 @@ namespace 点菜管理系统
             }
             string name;
             string lastDate;
-            int result = UserLogin(userType, textBox1.Text, textBox2.Text, out name, out lastDate);
+            int result = UserLogin(userType, textBox1.Text, textBox2.Text, out name,out lastDate);
             if (result == -1)
             {
                 MessageBox.Show("用户已离职");
@@ -64,14 +80,14 @@ namespace 点菜管理系统
                 {
                     MessageBox.Show(name + "欢迎回来,上次的登录时间为" + lastDate);
                     this.f.Hide();
-                    Form2 f2 = new Form2((Form1)f, name);
+                    Form2 f2 = new Form2((Form1)f, name,textBox1.Text);
                     f2.Show();
                 }
                 else
                 {
                     MessageBox.Show(name + "欢迎回来,上次的登录时间为" + lastDate);
                     this.f.Hide();
-                    Form4 f4 = new Form4((Form1)f, name);
+                    Form4 f4 = new Form4((Form1)f, name, textBox1.Text);
                     f4.Show();
                 }
 
@@ -79,7 +95,7 @@ namespace 点菜管理系统
         }
 
         //登录方法
-        private int UserLogin(string userType, string userName, string password, out string name, out string lastDate)
+        private int UserLogin(string userType, string userName, string password, out string name,out string lastDate)
         {
             name = "";
             lastDate = "";
@@ -129,6 +145,18 @@ namespace 点菜管理系统
                     }
                 }
                 return 0;
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked)
+            {
+                textBox2.PasswordChar = '\0';
+            }
+            else
+            {
+                textBox2.PasswordChar = '*';
             }
         }
     }
