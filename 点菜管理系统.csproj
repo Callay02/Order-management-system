@@ -158,6 +158,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="YeWuTongJi.Designer.cs" />
+    <Compile Include="YonghuGuanLi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YonghuGuanLi.Designer.cs">
+      <DependentUpon>YonghuGuanLi.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CaiPinGuanLi.resx">
       <DependentUpon>CaiPinGuanLi.cs</DependentUpon>
     </EmbeddedResource>
@@ -203,6 +209,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="YonghuGuanLi.resx">
+      <DependentUpon>YonghuGuanLi.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

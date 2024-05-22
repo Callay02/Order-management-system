@@ -32,6 +32,8 @@ namespace 点菜管理系统
             f6 = new Form6();
             f7 = new Form7();
             f8 = new Form8();
+            yhgl = new YonghuGuanLi();
+
 
         }
 
@@ -39,6 +41,7 @@ namespace 点菜管理系统
         UserControl f6 ;
         UserControl f7 ;
         UserControl f8 ;
+        UserControl yhgl;
         private void button1_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
@@ -103,6 +106,12 @@ namespace 点菜管理系统
         {
             GeRenXinXiGuanLi g = new GeRenXinXiGuanLi("管理员",userName);
             g.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            panel1.Controls.Add(yhgl);
         }
     }
 }

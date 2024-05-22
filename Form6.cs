@@ -100,5 +100,10 @@ namespace 点菜管理系统
             }
             dataGridView1.DataSource = dt;
         }
+
+        private void Form6_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

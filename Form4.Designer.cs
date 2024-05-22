@@ -140,6 +140,7 @@ namespace 点菜管理系统
             this.button5.TabIndex = 6;
             this.button5.Text = "用户管理";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // statusStrip1
             // 
@@ -165,7 +166,7 @@ namespace 点菜管理系统
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             this.toolStripStatusLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(403, 21);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(416, 21);
             this.toolStripStatusLabel2.Spring = true;
             this.toolStripStatusLabel2.Click += new System.EventHandler(this.toolStripStatusLabel2_Click);
             // 

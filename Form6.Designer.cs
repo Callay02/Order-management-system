@@ -59,7 +59,7 @@ namespace 点菜管理系统
             this.radioButton3.Location = new System.Drawing.Point(178, 4);
             this.radioButton3.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(70, 24);
+            this.radioButton3.Size = new System.Drawing.Size(57, 20);
             this.radioButton3.TabIndex = 3;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "汤类";
@@ -72,7 +72,7 @@ namespace 点菜管理系统
             this.radioButton2.Location = new System.Drawing.Point(90, 4);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(90, 24);
+            this.radioButton2.Size = new System.Drawing.Size(73, 20);
             this.radioButton2.TabIndex = 2;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "蔬菜类";
@@ -85,7 +85,7 @@ namespace 点菜管理系统
             this.radioButton1.Location = new System.Drawing.Point(4, 4);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(90, 24);
+            this.radioButton1.Size = new System.Drawing.Size(73, 20);
             this.radioButton1.TabIndex = 1;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "荤菜类";
@@ -98,7 +98,7 @@ namespace 点菜管理系统
             this.comboBox1.Location = new System.Drawing.Point(0, 40);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(252, 28);
+            this.comboBox1.Size = new System.Drawing.Size(252, 24);
             this.comboBox1.TabIndex = 1;
             // 
             // dateTimePicker1
@@ -106,7 +106,7 @@ namespace 点菜管理系统
             this.dateTimePicker1.Location = new System.Drawing.Point(260, 0);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(199, 30);
+            this.dateTimePicker1.Size = new System.Drawing.Size(199, 26);
             this.dateTimePicker1.TabIndex = 2;
             // 
             // dateTimePicker2
@@ -114,7 +114,7 @@ namespace 点菜管理系统
             this.dateTimePicker2.Location = new System.Drawing.Point(260, 38);
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(199, 30);
+            this.dateTimePicker2.Size = new System.Drawing.Size(199, 26);
             this.dateTimePicker2.TabIndex = 3;
             // 
             // button1
@@ -140,7 +140,7 @@ namespace 点菜管理系统
             // 
             // Form6
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
@@ -152,6 +152,7 @@ namespace 点菜管理系统
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form6";
             this.Size = new System.Drawing.Size(547, 450);
+            this.Load += new System.EventHandler(this.Form6_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
