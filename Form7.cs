@@ -49,5 +49,16 @@ namespace 点菜管理系统
         {
             ExcelDataOperation.ExportToExcel(genRenXiaoShouMingXi2, comboBox1.SelectedItem.ToString());
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedItem.Equals("所有点菜员"))
+            {
+                MessageBox.Show("暂不支持显示所有点菜员图表");
+                return;
+            }
+            TuBiao tb = new TuBiao("个人销售明细", (DataTable)genRenXiaoShouMingXi2.DataSource);
+            tb.Show();
+        }
     }
 }

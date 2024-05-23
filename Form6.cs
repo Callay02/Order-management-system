@@ -105,5 +105,11 @@ namespace 点菜管理系统
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TuBiao tb = new TuBiao("菜品销售明细",(DataTable)this.dataGridView1.DataSource);
+            tb.Show();
+        }
     }
 }

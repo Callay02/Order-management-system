@@ -31,7 +31,6 @@ namespace 点菜管理系统
             this.textBox1.Enabled = true;
             this.textBox2.Enabled = true;
             this.button1.Enabled = true;
-            this.button2.Enabled = true;
             this.checkBox1.Enabled = true;
             this.f=f;
             this.path1=path1;
@@ -44,7 +43,6 @@ namespace 点菜管理系统
             this.textBox2.Enabled=false;
             this.panel1.Enabled = false;
             this.button1.Enabled = false;
-            this.button2.Enabled = false;
             this.checkBox1.Enabled=false;
         }
 
